@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Ultimas vagas do App</title>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="3; URL=https://api.whatsapp.com/send?phone=559988458360&text=Ol%C3%A1,%20quero%20ter%20acesso%20ao%20app">
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+<style>
+body {display: flex;justify-content: center;align-items: center;text-align: center;font-family: 'Poppins', sans-serif;min-height: 100vh;margin: 0;}
+
+.footer-content {
+  bottom:10px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 8px;
+  color: #808080;
+}
+
+.btn {
+  box-shadow: 0px 0px 10px 0px #14B467;
+  background-color: #14B467;
+  border: none;
+  border-radius: 7px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 200px;
+  text-decoration: none;
+}
+
+.txt1 {
+  font-size: 16px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 24px;
+  color: #000000;
+}
+
+.progress-bar {
+  width: 70%;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 6px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+    
+.progress {
+  width: 0%;
+  height: 35px;
+  background-color: #4682b4;
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+    
+.progress-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-link {
+  color: unset;
+}
+
+@media  screen and (max-width: 992px){
+.txt1 {
+  font-size: 26px;
+}
+  
+.btn {
+  font-size: 60px;
+  padding: 15px 250px;
+}
+
+h2 {
+  font-size: 64px;
+  margin-top: 0px;
+}
+
+.progress-bar {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+    
+.progress {
+  height: 80px;   
+}
+    
+.progress-text {
+  font-size: 50px;
+}
+
+.footer-content {
+  font-size: 10px;
+}
+  
+.footer-link {
+  color: unset;
+}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #fff5ee !important">
+<div>
+<div class="progress-bar">
+<div class="progress"></div>
+<span class="progress-text">0%</span>
+</div>
+<div style="color: #ffffff!important">
+<h2>Redirecionando para o <span style="color:#4682b4">WHATSAPP...</span></h2>
+<p class="txt1">Cliquei no botão para ter acesso ao APP</p>
+<a class="btn" href="https://api.whatsapp.com/send?phone=559988458360&text=Ol%C3%A1,%20quero%20ter%20acesso%20ao%20app">CONTINUAR</a>
+</div>
+</div>
+<div class="footer-content">
+<a class="footer-link" target="_self" href="./index.html">Termos de Uso</a>
+<span class="footer-link">|</span>
+<a class="footer-link" target="_self" href="./index.html">Termos de Privacidade</a>
+<p>ESTE SITE NÃO É do FACEBOOK: Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial independente da FACEBOOK, Inc.
+Os resultados referentes ao serviço foram avaliados e comprovados por nossos clientes. Não garantimos os resultados iguais para todos, estes variam de pessoa para pessoa dependendo de diversos fatores individuais. As informações fornecidas neste site destina-se ao seu conhecimento geral e não garantimos um resultado específico, todo resultado será de inteira responsabilidade do cliente. Essa página/produto não tem vinculo com o Facebook.</p>
+</div>
+<script>
+    function simulateProgress() {
+      var progressBar = document.querySelector('.progress');
+      var progressText = document.querySelector('.progress-text');
+      var width = 0;
+      var interval = setInterval(increaseWidth, 25);
+      
+      function increaseWidth() {
+        if (width >= 100) {
+          clearInterval(interval);
+        } else {
+          width++;
+          progressBar.style.width = width + '%';
+          progressText.textContent = width + '%';
+        }
+      }
+    }
+    
+    simulateProgress();
+</script>
+</body>
+</html>
